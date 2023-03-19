@@ -4,12 +4,172 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Design 9</title>
+    <title>Design9</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <h1><img class="logo" src="./assets/Design-9_logo.svg" alt="logo" /></h1>
+      <div class="top-header">
+        <div class="top-header-child-1">
+          <h1 class="logo">
+            <img src="./assets/icon/Logo.png" alt="Logo" />
+          </h1>
+          <form class="form">
+            <input class="input-search" type="text" name="search" />
+            <button class="search-btn" type="button" name="search">
+              <img src="./assets/icon/Search.png" alt="Search icon" />
+            </button>
+          </form>
+        </div>
+
+        <div class="top-header-child-2">
+          <h2 class="my-account">My Account</h2>
+          <img
+            class="person-icon"
+            src="./assets/icon/Person.png"
+            alt="Person icon"
+          />
+          <img
+            class="heart-icon"
+            src="./assets/icon/Heart.png"
+            alt="heart icon"
+          />
+          <img class="bag-icon" src="./assets/icon/Bag.png" alt="bag icon" />
+          <button class="checkout-btn" type="button">Checkout</button>
+        </div>
+      </div>
+
+      <nav class="bottom-header">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            Living Room
+            <ul class="dropdown living-room">
+              <li>Book & Shelves</li>
+              <li>Coffe Table</li>
+              <li>Fireplaces</li>
+              <li>Nest of Tables</li>
+              <li>Side Tables</li>
+              <li>TV Units</li>
+            </ul>
+          </li>
+
+          <li class="nav-list-item">
+            Bedroom
+            <ul class="dropdown bedroom">
+              <li>Beds</li>
+              <li>Bedside Tables</li>
+              <li>Chest of Drawers</li>
+              <li>Consoles</li>
+              <li>Dressing Tables</li>
+              <li>Nightstand</li>
+              <li>Wardrobes</li>
+            </ul>
+          </li>
+
+          <li class="nav-list-item">
+            Dining & Kitchen
+            <ul class="dropdown dining-kitchen">
+              <li>Dining Tables</li>
+              <li>Sideboards</li>
+              <li>Kitchen</li>
+            </ul>
+          </li>
+
+          <li class="nav-list-item">
+            Home Office
+            <ul class="dropdown home-office">
+              <li>Desks</li>
+              <li>Bookcases & Shelves</li>
+              <li>Consoles</li>
+              <li>Binder Shelves</li>
+              <li>Drawers</li>
+            </ul>
+          </li>
+
+          <li class="nav-list-item">Storage</li>
+          <li class="nav-list-item">Posters</li>
+          <div class="overlay"></div>
+        </ul>
+      </nav>
     </header>
+
+    <main>
+      <section class="section-1">
+        <button class="left-btn" type="button">
+          <img
+            class="left-arrow"
+            src="./assets/icon/Arrow 1.png"
+            alt="left arrow"
+          />
+        </button>
+        <button class="right-btn" type="button">
+          <img
+            class="right-arrow"
+            src="./assets/icon/Arrow 1.png"
+            alt="left arrow"
+          />
+        </button>
+
+        <div class="top-slider">
+          <img src="./assets/Img/D-Bedroom-Lifestyle 1.png" alt="img 1" />
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="bottom-slider">
+          <h3 class="bottom-slider-header">Living Room</h3>
+          <img
+            class="slider-2-img"
+            src="./assets/Img/spacejoy-umAXneH4GhA-unsplash 2-1.png"
+            alt="img 1"
+          />
+          <ul class="pagination">
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-3">
+        <h2 class="top-products-header">Our top products</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="./assets/Img/destination-home-03-data 3-1.png"
+              alt="img 3-1"
+            />
+            <h3>Sideboards</h3>
+          </div>
+          <div class="product">
+            <img src="./assets/Img/Desktop-HP-Slide-3-2.png" alt="img 3-1" />
+            <h3>Living Room</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="top-footer">
+        <ul class="social-media">
+          <li><img src="./assets/icon/Instagram.png" alt="instagram" /></li>
+          <li><img src="./assets/icon/Youtube.png" alt="youtube" /></li>
+          <li><img src="./assets/icon/Facebook.png" alt="facebook" /></li>
+        </ul>
+      </div>
+      <div class="bottom-footer">
+        <nav>
+          <ul class="footer-nav">
+            <li>Contact</li>
+            <li>Get help</li>
+            <li>Chat</li>
+            <li>Privacy & Legal</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
