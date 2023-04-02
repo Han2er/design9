@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+app-category-slider {
+  padding: 0 10%;
+}

@@ -1,0 +1,38 @@
+<swiper
+  [loop]="true"
+  [autoHeight]="true"
+  [allowTouchMove]="true"
+  [autoplay]="{ delay: 10000, disableOnInteraction: false }"
+  [pagination]="{ clickable: true }"
+  [navigation]="true"
+>
+  <ng-template swiperSlide>
+    <div class="slid-cont">
+      <img
+        class="slide-img"
+        [src]="'/assets/imgs/D-Bedroom-Lifestyle.png'"
+        alt="slide 1"
+      />
+    </div>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <div class="slid-cont">
+      <img
+        class="slide-img"
+        [src]="'/assets/imgs/Desktop-HP-Slide.png'"
+        alt="slide 2"
+      />
+    </div>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <div class="slid-cont">
+      <img
+        class="slide-img"
+        [src]="'/assets/imgs/kam-idris-_HqHX3LBN18-unsplash.jpg'"
+        alt="slide 3"
+      />
+    </div>
+  </ng-template>
+</swiper>
