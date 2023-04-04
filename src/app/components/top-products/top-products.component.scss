@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 50px;
+}
+
+.top-products-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  transform: none;
+  position: static;
+}
