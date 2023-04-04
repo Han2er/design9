@@ -12,36 +12,39 @@ header {
 }
 
 .top-header {
-  width: 1340px;
+  width: 100%;
   height: 80px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 50px;
+  gap: 30px;
 }
 
 .top-header-child-1 {
-  width: 514.82px;
-  height: 40.02px;
+  width: 100%;
+  max-width: 520px;
+  height: 40px;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .logo {
-  width: 144.82px;
-  height: 40.02px;
+  height: 100%;
   cursor: pointer;
-}
 
-.logo img {
-  width: 144.82px;
-  height: 40.02px;
+  img {
+    height: 100%;
+  }
 }
 
 .form {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
+  min-width: 130px;
   height: 32px;
 
   display: flex;
@@ -49,14 +52,14 @@ header {
 
   border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
-}
 
-.form:focus-within {
-  outline: rgb(0, 0, 0) solid 1px;
+  &:focus-within {
+    outline: rgb(0, 0, 0) solid 1px;
+  }
 }
 
 .input-search {
-  width: 90%;
+  width: 100%;
   height: 100%;
   font-size: 16px;
   padding: 15px;
@@ -77,11 +80,11 @@ header {
   border: none;
 
   cursor: pointer;
-}
 
-.search-btn img {
-  width: 18px;
-  height: 18px;
+  img {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .top-header-child-2 {
@@ -123,10 +126,10 @@ header {
   background: linear-gradient(106.38deg, #d38bff 14.55%, #722de3 79.13%);
 
   cursor: pointer;
-}
 
-.checkout-btn:active {
-  outline: 2px solid rgb(0, 0, 0);
+  &:active {
+    outline: 2px solid rgb(0, 0, 0);
+  }
 }
 
 /* --------------------- Bottom-header --------------------- */
@@ -144,11 +147,13 @@ header {
 }
 
 .nav-list {
-  width: 951px;
+  width: 100%;
   height: 100%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 0 50px;
+  gap: 70px;
 
   list-style: none;
   color: rgb(255, 255, 255);
@@ -167,18 +172,14 @@ header {
   line-height: 20px;
 
   cursor: pointer;
-}
 
-.nav-list-item:hover {
-  color: rgb(170, 170, 170);
-}
+  &:hover {
+    color: rgb(170, 170, 170);
 
-.nav-list-item:hover .dropdown {
-  display: flex;
-}
-
-.nav-list-item:hover ~ .overlay {
-  display: block;
+    & .dropdown {
+      display: flex;
+    }
+  }
 }
 
 .dropdown {
@@ -192,7 +193,7 @@ header {
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 20px;
 
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
@@ -203,24 +204,10 @@ header {
 }
 
 .dropdown li {
+  width: 100%;
   font-size: 16px;
   line-height: 16px;
   align-items: center;
 
   cursor: pointer;
-}
-
-.overlay {
-  width: 100%;
-  height: calc(100vh - 130px + 50px);
-
-  position: absolute;
-  left: 0;
-  top: 0;
-
-  display: none;
-
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(40px);
-  z-index: -1;
 }
