@@ -9,6 +9,8 @@ import SwiperCore, {
   Autoplay,
   Controller,
   EffectCoverflow,
+  Mousewheel,
+  Keyboard,
 } from 'swiper';
 
 // install Swiper components
@@ -19,6 +21,8 @@ SwiperCore.use([
   Autoplay,
   Controller,
   EffectCoverflow,
+  Mousewheel,
+  Keyboard,
 ]);
 @Component({
   selector: 'app-category-slider',
