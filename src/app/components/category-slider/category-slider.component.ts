@@ -11,6 +11,7 @@ import SwiperCore, {
   EffectCoverflow,
   Mousewheel,
   Keyboard,
+  Lazy,
 } from 'swiper';
 
 // install Swiper components
@@ -23,6 +24,7 @@ SwiperCore.use([
   EffectCoverflow,
   Mousewheel,
   Keyboard,
+  Lazy,
 ]);
 @Component({
   selector: 'app-category-slider',

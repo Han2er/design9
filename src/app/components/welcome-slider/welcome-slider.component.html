@@ -1,10 +1,12 @@
 <swiper
+  class="welcome-slider"
   [loop]="true"
   [autoHeight]="true"
   [allowTouchMove]="true"
   [autoplay]="{ delay: 10000, disableOnInteraction: false }"
   [pagination]="{ clickable: true }"
   [navigation]="true"
+  [spaceBetween]="20"
 >
   <ng-template swiperSlide>
     <div class="slid-cont">

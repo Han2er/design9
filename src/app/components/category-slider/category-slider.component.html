@@ -12,9 +12,10 @@
     modifier: 1,
     slideShadows: true
   }"
-  [pagination]="true"
+  [pagination]="{ clickable: true }"
   [mousewheel]="true"
   [keyboard]="true"
+  [lazy]="true"
 >
   <ng-template swiperSlide>
     <div class="slid-cont2">
