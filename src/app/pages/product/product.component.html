@@ -1,0 +1,46 @@
+<div class="prod-container">
+  <div class="images">
+    <div class="list">
+      <i class="bi bi-chevron-up" (click)="goDown()"></i>
+      <ul class="img-list">
+        <li *ngFor="let imgs of nums_0to5">
+          <img
+            src="assets/imgs/prod-demo/pr{{ imgs }}.png"
+            alt="pr"
+            [ngStyle]="{ transform: getPos() }"
+          />
+        </li>
+      </ul>
+      <i class="bi bi-chevron-down" (click)="goUp()"></i>
+    </div>
+    <div class="img-main">
+      <img src="assets/imgs/prod-demo/pr0.png" alt="img1" />
+    </div>
+  </div>
+  <div class="descriptions">
+    <div class="title">
+      <h2 class="name">Arches Mango Effect Sideboard</h2>
+      <div class="price">₾000</div>
+    </div>
+    <div class="prod-id">id: c0-000</div>
+    <div class="properties">
+      <div class="options">
+        <div class="color">
+          <h4>Color</h4>
+          <ul>
+            <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+          </ul>
+        </div>
+        <div class="availability">in stock</div>
+        <button>Add to bag</button>
+      </div>
+      <div class="info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quae eius
+        minus, doloremque laborum ipsam ex nobis recusandae ducimus asperiores
+        velit eaque cumque repudiandae dicta magni libero. Nihil, tempora enim?
+      </div>
+    </div>
+  </div>
+</div>

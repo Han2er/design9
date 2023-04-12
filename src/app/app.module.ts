@@ -12,6 +12,8 @@ import { WelcomeSliderComponent } from './components/welcome-slider/welcome-slid
 import { CategorySliderComponent } from './components/category-slider/category-slider.component';
 import { TopProductsComponent } from './components/top-products/top-products.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProductComponent } from './pages/product/product.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     CategorySliderComponent,
     TopProductsComponent,
     FooterComponent,
+    ProductComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],
